@@ -1,0 +1,50 @@
+
+body.bg-color {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button#grey {
+    border: 1px solid #9b3636;
+    background-color: grey;
+}
+
+.button#white {
+    background-color: white;
+    border: 1px solid #9b3636;
+}
+
+.button#blue {
+    border: 1px solid #9b3636;
+    background-color: blue;
+}
+
+.button#yellow {
+    border: 1px solid #9b3636;
+    background-color: yellow;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
