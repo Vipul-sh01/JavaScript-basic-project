@@ -14,6 +14,8 @@ How to Use:
 Enter your weight in kilograms.
 Enter your height in centimeters.
 Click the "Calculate BMI" button to see the result.
+
+
 2. Digital Clock
 A simple digital clock that displays the current time in hours, minutes, and seconds using JavaScript. The clock updates in real-time and shows the time in 12-hour or 24-hour format based on user preference.
 
@@ -29,6 +31,8 @@ How to Use:
 
 Open the webpage to see the real-time clock.
 Use the toggle button to switch between 12-hour and 24-hour formats.
+
+
 3. Color Switcher
 A simple color switcher app that allows users to change the background color of the webpage. The color can be switched either randomly or by selecting from a predefined list of colors.
 
