@@ -17,6 +17,8 @@
 //     }
 // })
 
+
+
 function calculateBMI() {
     const height = document.getElementById('height').value;
     const weight = document.getElementById('weight').value;
