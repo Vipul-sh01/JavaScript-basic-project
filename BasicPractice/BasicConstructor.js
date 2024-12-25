@@ -29,3 +29,19 @@ class Person{
 
 const person = new Person('vipul', 21);
 person.fun();
+
+// A class with constructor. it will take the constructor with properties and methods.
+
+
+class ApiResponse {
+    constructor(statusCode, data, message = "Success"){
+        this.statusCode = statusCode
+        this.data = data
+        this.message = message
+        this.success = statusCode < 400
+    }
+}
+
+const respo = new ApiResponse(455, {}, 'vipul');
+console.log(typeof respo);
+console.log(respo);
