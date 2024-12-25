@@ -49,6 +49,8 @@ function getData(data, netData){
 
 // getData(1, callfun);
 
+
+
 getData(1, () => {
     console.log("Data fetiching...");
     getData(2, () => {

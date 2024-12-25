@@ -3,23 +3,29 @@
 // This is called a clouser.
 
 
-// function OuterFunction(){
-//     const name = 'Vipul';
-//     return function innerFunction(){
-//         return function innerInnerFunction(){
-//             console.log(name);
-//         }
-//     }
-// }
-
-// OuterFunction()()();
-
-function clickHandler(color){ 
-    return function(){
-        console.log(color);
-    }  
+function OuterFunction(){
+    const name = 'Vipul';
+    return function innerFunction(){
+        return function innerInnerFunction(){
+            console.log(name);
+        }
+    }
 }
 
-const click = clickHandler('red');
-click(); 
-// console.log(red);
+// used to call the again function. becourse the function is returning a function. 
+// make sure to call the function with the help of (). what ever the function is returning.
+OuterFunction()()();
+
+
+
+
+
+// function clickHandler(color){ 
+//     return function(){
+//         console.log(color);
+//     }  
+// }
+
+// const click = clickHandler('red');
+// click(); // used to call the again function. becourse the function is returning a function.
+

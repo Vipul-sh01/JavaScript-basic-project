@@ -1,15 +1,15 @@
 // A class without constructor. it is a class with properties and methods. it will take defoult constructor.
 
 class UserName{
-    name = '';
-    age = '';
+    name = ''; // properties
+    age = ''; // properties
 
     greet(){
         console.log(`Hello My Name is ${this.name} and ${this.age}`);
     }
 }
 
-const user = new UserName();
+const user = new UserName(); // creating object of class UserName
 user.name = 'vipul';
 user.age = '21';
 user.greet();
@@ -34,7 +34,7 @@ person.fun();
 
 
 class ApiResponse {
-    constructor(statusCode, data, message = "Success"){
+    constructor(statusCode, data, message = "Success"){ 
         this.statusCode = statusCode
         this.data = data
         this.message = message
