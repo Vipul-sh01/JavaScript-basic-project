@@ -3,13 +3,23 @@
 // This is called a clouser.
 
 
-function OuterFunction(){
-    const name = 'Vipul';
-    return function innerFunction(){
-        return function innerInnerFunction(){
-            console.log(name);
-        }
-    }
+// function OuterFunction(){
+//     const name = 'Vipul';
+//     return function innerFunction(){
+//         return function innerInnerFunction(){
+//             console.log(name);
+//         }
+//     }
+// }
+
+// OuterFunction()()();
+
+function clickHandler(color){ 
+    return function(){
+        console.log(color);
+    }  
 }
 
-OuterFunction()()();
+const click = clickHandler('red');
+click(); 
+// console.log(red);
