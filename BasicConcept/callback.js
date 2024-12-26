@@ -5,7 +5,14 @@
 // function cal(a, b, cb) {
 //     console.log(cb(a, b));
 // }
-// callback is function that is passed as an argument to another function. the function that accept other function as argument is called higher order function.
+
+
+
+// callback is function that is passed as an argument to another function. 
+// the function that accept other function as argument is called higher order function.
+
+
+
 
 // sum excute as callbak function.
 // cal(2, 3, sum)

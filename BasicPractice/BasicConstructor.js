@@ -4,22 +4,22 @@ class UserName{
     name = ''; // properties
     age = ''; // properties
 
-    greet(){
+    greet(){ // method
         console.log(`Hello My Name is ${this.name} and ${this.age}`);
     }
 }
 
 const user = new UserName(); // creating object of class UserName
-user.name = 'vipul';
+user.name = 'vipul'; // setting the value of properties
 user.age = '21';
-user.greet();
+user.greet(); // calling the method of class UserName
 
 
 // A class with constructor. it will take the constructor with properties and methods.
 
 class Person{
-    constructor(Name, age){
-        this.Name = Name;
+    constructor(Name, age){ // Name and age are properties
+        this.Name = Name; // value of properties. this keyword is used to access the properties of the same class.
         this.age = age;
     }
     fun(){
@@ -27,7 +27,9 @@ class Person{
     }
 }
 
-const person = new Person('vipul', 21);
+// new keyword is used to create the object of the class.
+
+const person = new Person('vipul', 21); // take value of properties as a paremeter in constructor
 person.fun();
 
 // A class with constructor. it will take the constructor with properties and methods.

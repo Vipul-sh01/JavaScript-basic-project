@@ -9,6 +9,8 @@ function getData(data, netData){
     }, 2000)
 }
 
+// A callback hell is a situation in which the code contains multiple nested callbacks.
+// The code becomes difficult to read and understand.
 getData(1, () => {
     console.log("Data fetiching...");
     getData(2, () => {

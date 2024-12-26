@@ -7,7 +7,7 @@ function OuterFunction(){
     const name = 'Vipul';
     return function innerFunction(){
         return function innerInnerFunction(){
-            console.log(name);
+            console.log(name); // clouser
         }
     }
 }
