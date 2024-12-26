@@ -16,6 +16,7 @@ user.greet(); // calling the method of class UserName
 
 
 // A class with constructor. it will take the constructor with properties and methods.
+//A constructor is a special type of method that is used to initialize the object of the class.
 
 class Person{
     constructor(Name, age){ // Name and age are properties

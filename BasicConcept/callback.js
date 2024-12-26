@@ -10,7 +10,7 @@
 
 /* callback is function that is passed as an argument to another function. 
 the function that accept other function as argument is called higher order function.
-*/ 
+*/
 
 
 // sum excute as callbak function.
@@ -36,16 +36,16 @@ the function that accept other function as argument is called higher order funct
 
 // setTimeout(() => {
 //     console.log('vipul');
-    
+
 // }, 1000);
 
 
-function getData(data, netData){
-    setTimeout(() =>{
+function getData(data, netData) {
+    setTimeout(() => {
         console.log('Data', data);
-       if(netData){
-        netData();
-       }
+        if (netData) {
+            netData();
+        }
     }, 2000)
 }
 
@@ -61,7 +61,7 @@ getData(1, () => {
     console.log("Data fetiching...");
     getData(2, () => {
         console.log("Data fetiching...");
-        getData(3, () =>{
+        getData(3, () => {
             console.log("Data fetiching...");
             getData(4)
         })
@@ -92,10 +92,15 @@ getData(1, () => {
 
 /*
 Advantages of using callback functions:
-1. Asynchronous Execution:
-2. Code Reusability:
-3. Custom Behavior:
-4. Event Handling:
+1. Asynchronous Execution: Callbacks allow code to be executed non-blockingly, 
+   enabling other operations to continue while waiting for a task (e.g., fetching data) to complete.
+
+2. Code Reusability: Callbacks promote code reuse as they allow passing different functions to be executed as needed. 
+
+3. Custom Behavior: You can control the flow of your program by providing custom callback functions.
+
+4. Event Handling: Callbacks are widely used in handling user events like clicks, mouse movements, and keypresses.
+
 5. Foundation for Promises and async/await:
  */
 
