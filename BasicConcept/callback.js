@@ -8,10 +8,9 @@
 
 
 
-// callback is function that is passed as an argument to another function. 
-// the function that accept other function as argument is called higher order function.
-
-
+/* callback is function that is passed as an argument to another function. 
+the function that accept other function as argument is called higher order function.
+*/ 
 
 
 // sum excute as callbak function.
@@ -89,3 +88,14 @@ getData(1, () => {
 // getData(1, () => {
 //     getData(2);
 // })
+
+
+/*
+Advantages of using callback functions:
+1. Asynchronous Execution:
+2. Code Reusability:
+3. Custom Behavior:
+4. Event Handling:
+5. Foundation for Promises and async/await:
+ */
+
