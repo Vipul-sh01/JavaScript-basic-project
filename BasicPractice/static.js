@@ -1,4 +1,4 @@
-// A static keyword is used to define a static method for a class. 
+// A static keyword is used to define a static method and properties for a class. 
 // Static methods are called without creating an object of the class. 
 // Static methods are often used to create utility functions for an application. 
 // Static methods are defined using the static keyword followed by the method name. 
