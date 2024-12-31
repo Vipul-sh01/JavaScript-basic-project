@@ -20,4 +20,22 @@ getData(1)
     });
 
 
+// Second example of Promise.
+
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Data received')
+            reject('MongoDB connection failed')
+        }, 2000);
+    })
+}
+
+getData(1).then((res) => {
+    console.log('Data fetching', 1);
+}).catch((err) => {
+     console.log("MongoDB connection failed: ", err);
+});
+
+
     
