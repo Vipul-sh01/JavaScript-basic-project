@@ -1,3 +1,12 @@
+// Q1: what is constructor in javascript?
+//A constructor is a special type of method that is used to initialize the object of the class.
+
+// Q2: what is the difference between constructor and method?
+//A constructor is a special type of method that is used to initialize the object of the class.
+//A method is a function which is a property of an object.
+
+
+
 // A class without constructor. it is a class with properties and methods. it will take defoult constructor.
 
 class UserName{
@@ -16,7 +25,7 @@ user.greet(); // calling the method of class UserName
 
 
 // A class with constructor. it will take the constructor with properties and methods.
-//A constructor is a special type of method that is used to initialize the object of the class.
+
 
 class Person{
     constructor(Name, age){ // Name and age are properties
