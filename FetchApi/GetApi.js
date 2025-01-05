@@ -1,4 +1,4 @@
-const Url = 'https://api.restful-api.dev/objects'; // Url to fetch data from
+const Url = 'https://bc62-103-226-203-170.ngrok-free.app/api/v1/books/books/:id'; // Url to fetch data from
 
 
 document.getElementById('btn').addEventListener('click', ()=>{ // event listener on button click. 
@@ -13,13 +13,14 @@ document.getElementById('btn').addEventListener('click', ()=>{ // event listener
 
         //fetch method returns a promise that resolves to the Response to that request, whether it is successful or not.
 
-        
         try {
             if(!response.ok){
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            document.getElementById('get').innerHTML = JSON.stringify(data[4].name, null, 2);
+            // document.getElementById('get').innerHTML = JSON.stringify(data[4].name, null, 2);
+            console.log(data);
+            
         } catch (error) {
             console.log(error);
         }
