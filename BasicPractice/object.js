@@ -35,11 +35,48 @@ console.log({...user}); // output: { name: 'vipul', age: 22, address: 'pune' }. 
 
 // Q3: what is object literal?
 // Ans: An object literal is a list of zero or more pairs of property names and associated values of an object, 
-// enclosed in curly braces ({}).
-const Person = {
-    name: 'vipul',
-    age: 22,
-    address: 'pune'
-}
+// enclosed in curly braces {}.
+// const Person = {
+//     name: 'vipul',
+//     age: 22,
+//     address: 'pune'
+// }
 
 // console.log(Person);
+
+
+const MySymbol = Symbol();
+
+const Person = {
+    name: 'vipul',// behind the Scene name look like "name" in String form;
+    age: 21,
+    email: 'vipul@gmail.com',
+    // MySymbol: 'Call me', // there is MySymbol not accessable. if we wannt access so currect Syntext is [],
+    [MySymbol]: 'Call me',
+    "full name": 'Vipul sharma',
+    loginDay: ['monday', 'sunday']
+}
+
+console.log(Person.name);
+console.log(Person["name"]); //Access propertise by [] methods.
+console.log(Person[MySymbol]);
+// console.log(typeof MySymbol);
+console.log(Person['full name']);
+
+Person.age = 22;
+console.log(Person);
+// Object.freeze(Person);// freeze Objects
+Person.age = 23;
+console.log(Person);
+
+
+Person.greeting = function Hello(){ // add function in Object
+    console.log(`hello vipul ${this.name}`);
+}
+
+console.log(Person.greeting());
+
+console.log(Person.loginDay);
+console.log(typeof loginDay);
+
+
