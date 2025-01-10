@@ -45,7 +45,7 @@ console.log({...user}); // output: { name: 'vipul', age: 22, address: 'pune' }. 
 // console.log(Person);
 
 
-const MySymbol = Symbol();
+const MySymbol = Symbol();// Symbole is primitive data types which is used for key as assing a unice value in object,
 
 const Person = {
     name: 'vipul',// behind the Scene name look like "name" in String form;
@@ -79,4 +79,69 @@ console.log(Person.greeting());
 console.log(Person.loginDay);
 console.log(typeof loginDay);
 
+// const obj = new Object();
+
+const obj = {};
+
+obj.name = 'vipul';
+obj.age = 21;
+obj.isloggin = false;
+
+console.log(Object.keys(obj));//importent 
+console.log(Object.values(obj));
+console.log(obj.hasOwnProperty('isloggin'));
+console.log(obj);
+
+
+const owner1 = {
+    1: 'a',
+    2: 'b',
+    3: 'c',
+}
+
+const owner2 = {
+    4: 'b',
+    5: 'n',
+    7: 'k',
+}
+
+console.log(Object.assign({}, owner1, owner2)); // Object.assing is method used for merge two objects
+const owner3 = {...owner1, ...owner2}; // merge two obeject by spred operators.
+console.log(owner3);
+
+// Nesting Object
+
+const NestedObject = {
+    name: 'vipul',
+    fullName: {
+        name: 'sharma',
+        age: 21,
+        address: {
+            village: 'sakarauli',
+            post: 'badhupar',
+        }
+    }
+
+}
+
+console.log(NestedObject);
+console.log(NestedObject.fullName.address.post);
+
+
+const AllUser = [
+    user1 = {
+        id: 1,
+        name:'vipul',
+    },
+    user2 = {
+        id: 1,
+        name:'sharma',
+    },
+    user3 = {
+        id: 1,
+        name:'vipul',
+    }
+]
+
+console.log(AllUser[1].name);
 
