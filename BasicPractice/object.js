@@ -109,6 +109,7 @@ console.log(Object.assign({}, owner1, owner2)); // Object.assing is method used 
 const owner3 = {...owner1, ...owner2}; // merge two obeject by spred operators.
 console.log(owner3);
 
+
 // Nesting Object
 
 const NestedObject = {
