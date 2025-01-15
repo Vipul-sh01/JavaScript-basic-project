@@ -12,6 +12,7 @@ function getData(Data){
 // it returns a promise.
 // await is a keyword that is used to wait for the promise to be resolved.
 //()() IIFE (Immediately Invoked Function Expression) is used to call the async function.
+
 (async function getElement(){
     await getData(1);
     await getData(2);
