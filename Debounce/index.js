@@ -24,3 +24,4 @@ function sayMyName(){
 }
 
 document.querySelector('#btn').onclick = Debounce(sayMyName, 2000);
+
