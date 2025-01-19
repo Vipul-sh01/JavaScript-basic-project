@@ -87,7 +87,7 @@ obj.name = 'vipul';
 obj.age = 21;
 obj.isloggin = false;
 
-console.log(Object.keys(obj));//importent 
+console.log(Object.keys(obj));//importent return array of keys from obj
 console.log(Object.values(obj));
 console.log(obj.hasOwnProperty('isloggin'));
 console.log(obj);
