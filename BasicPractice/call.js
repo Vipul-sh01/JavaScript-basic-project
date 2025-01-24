@@ -8,7 +8,9 @@ function Two(user,name, age){
     this.name = name;
     this.age = age;
 }
-
+// call method is used to call a function with a given this value and arguments provided individually.
+// call() provides a new value of this to the function/method. With call(), 
+// you can write a method once and then inherit it in another object, without having to rewrite the method for the new object.
 
 const obj1 = new Two('sakshi','vikash', 21);
 console.log({...obj1});
