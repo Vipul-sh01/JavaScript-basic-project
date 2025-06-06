@@ -40,6 +40,8 @@ the function that accept other function as argument is called higher order funct
 // }, 1000);
 
 
+
+
 function getData(data, netData) {
     setTimeout(() => {
         console.log('Data', data);
