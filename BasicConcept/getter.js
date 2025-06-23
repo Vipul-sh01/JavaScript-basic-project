@@ -1,0 +1,6 @@
+class fun{
+    name;
+    age;
+}
+
+
