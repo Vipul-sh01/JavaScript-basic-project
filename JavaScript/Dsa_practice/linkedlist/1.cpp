@@ -34,6 +34,8 @@ class linkedlist{
     }
 };
 
+
+
 int main(){
     node *head = nullptr;
     linkedlist obj;
